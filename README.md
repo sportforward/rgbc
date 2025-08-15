@@ -1,2 +1,2 @@
-# rgbc
+# RGBC
 The RGBC website
