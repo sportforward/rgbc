@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<title>U19/Youth Program | Ridley Graduate Boat Club</title>
+<link href="css/rgbcstyl.css" rel="stylesheet" type="text/css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="U19/Youth rowing at Ridley Graduate Boat Club">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link href="images/rbgcflv.png" rel="icon" type="image/x-icon"/>
+    <title>U19/Youth Program | Ridley Graduate Boat Club</title>
+</head>
+
+<body>
+    <header>
+  <nav class="flexbox-containernav">
+    <div class="logo-container">
+        <img class="logo-img" src="images/rbgclogonobkd.png" alt="rgbc logo" width="80px" height="80px">
+    </div>
+  
+    <ul>
+      <li><a href="#">Home</a></li>
+      
+<li>
+        <a href="#">About Us</a>
+        <ul class="submenu">
+            <li><a href="history.htm">Club History</a></li>
+            <li><a href="team.htm">Our Team</a></li>
+            <li><a href="rgbcdocs.htm">Docs/Links</a></li>
+            <li><a href="calendar.htm">Calendar</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="ontarios.htm">Ontario Indoors</a></li>
+        </ul>
+</li>
+      
+<li>
+        <a href="#">Programs</a>
+    <ul class="submenu">
+          <li><a href="u19.htm">U19/Youth</a></li>
+          <li><a href="highschool.htm">Highschool</a></li>
+          <li><a href="u23.htm">U23/Senior</a></li>
+          <li><a href="masters.htm">Masters</a></li>
+    </ul>
+</li>
+      
+<li>
+    <a href="#">Membership</a>
+    <ul class="submenu">
+            <li><a href="fees.htm">Fees</a></li>
+            <li><a href="regattainfo.htm">Regatta Information</a></li>
+    </ul>
+</li>
+
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </nav>
+
+        <h1 class="center-text">Ridley Graduate Boat Club</h1>
+        <h5 class="center-text2">Est. 1972</h5>
+ </header>   
+
+    <main class="main-container">
+       <article>
+            <div class="welcome-div"></div>
+        </article>
+        <br>
+        <div class="flexbox-container-main">
+            <div class="flexbox-sect2">
+                <div class="pagetitle">U19/Youth Program</div><br>
+                <div class="indicator-row">
+                  <div class="accepting-indicator"><span class="icon">&#x2705;</span> Now Accepting Athletes</div>
+                </div>
+                <!-- <div class="not-accepting-indicator"><span class="icon">&#x274C;</span> Not Currently Accepting Athletes</div> -->
+                <div class="writeup-container">
+                <p>The U19/Youth program at RGBC is tailored for young athletes who are eager to learn, grow, and compete in the sport of rowing. Our program welcomes both beginners and experienced rowers, providing a structured environment where athletes can develop their technique, fitness, and confidence. Training sessions are designed to be challenging yet supportive, helping each athlete progress at their own pace.</p>
+                <br>
+                <p>In addition to on-water training, the program includes land-based workouts, team-building activities, and opportunities to race at local and regional regattas. Our coaches foster a positive atmosphere where youth athletes are encouraged to set goals, support their teammates, and enjoy the journey of becoming well-rounded rowers and individuals.</p>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="images/20170803_064329.jpg" alt="U19/Youth rowers on Henley Course at sunrise" width="100%" height="250" />
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Ridley Graduate Boat Club</h3>
+        <p class="date-update">Last updated: <span id="last-updated"></span></p> 
+    </footer>
+    <script>
+        const dateElement = document.getElementById("last-updated");
+        const now = new Date();
+        const formattedDate = now.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+        dateElement.textContent = formattedDate; 
+      </script>
+</body>
+
+</html> 

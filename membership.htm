@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to Ridley Graduate Boat Club">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="images/rbgcflv.png" rel="icon" type="image/x-icon"/>
+    <link href="css/rgbcstyl.css" rel="stylesheet" type="text/css">
+    <title>Membership | Ridley Graduate Boat Club</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="flexbox-containernav">
+            <div class="logo-container">
+                <img class="logo-img" src="images/rbgclogonobkd.png" alt="rgbc logo" width="80px" height="80px">
+            </div>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                
+                <li>
+                    <a href="#">About Us</a>
+                    <ul class="submenu">
+                        <li><a href="history.htm">Club History</a></li>
+                        <li><a href="team.htm">Our Team</a></li>
+                        <li><a href="rgbcdocs.htm">Docs/Links</a></li>
+                        <li><a href="calendar.htm">Calendar</a></li>
+                        <li><a href="contact.htm">Contact</a></li>
+                        <li><a href="ontarios.htm">Ontario Indoors</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Programs</a>
+                    <ul class="submenu">
+                        <li><a href="#">U19/Youth</a></li>
+                        <li><a href="#">Highschool</a></li>
+                        <li><a href="#">U23/Senior</a></li>
+                        <li><a href="#">Masters</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Membership</a>
+                    <ul class="submenu">
+                        <li><a href="fees.htm">Fees</a></li>
+                        <li><a href="regattainfo.htm">Regatta Information</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="center-text">Ridley Graduate Boat Club</h1>
+        <h5 class="center-text2">Est. 1972</h5>
+    </header>   
+
+    <!-- MAIN CONTENT SECTION -->
+    <main class="main-container">
+        <!-- Welcome Divider -->
+        <article>
+            <div class="welcome-div"></div>
+        </article>
+<br>
+        <!-- CONTENT AREA 2: Main Content with Flexbox Layout -->
+        <div class="flexbox-container-main">
+            <div class="flexbox-sect2">
+                <div class="pagetitle">Membership</div><br>
+                <div class="pagetitle-sub"></div>
+               
+                <div class="writeup-container">
+                <p>Joining a rowing club like RGBC is about becoming part of a community that values excellence, teamwork, and personal growth. Membership can offer access to coaching, equipment, and the historic Henley Island rowing course as well as other benefits. Whether you're a competitive athlete aiming for national championships, a recreational rower seeking fitness and camaraderie, or a master rower continuing your passion for the sport, our club provides the resources and support to help you achieve your goals. Beyond the physical benefits of rowing, membership connects you to a network of dedicated athletes, coaches, and supporters who share your passion for the sport. Our club's rich history and tradition create a unique environment where every member contributes to our legacy while building their own rowing journey.</p>
+         <br>  
+                <p>We have several <a href="programs.htm" class="text-link">programs</a> and different <a href="fees.htm" class="text-link">membership fees</a> that can be found on their pages.</p>    
+         <br>
+                <p>If you have any questions please <a href="contact.htm" class="text-link">contact us</a> anytime.</p>
+            </div>
+
+                <div class="pagetitle-sub">Membership Responsibilities</div> 
+                <div class="writeup-container">
+        <p>With membership comes responsibilities.  RGBC is a mostly volunteer organization and as such we need some help from our members from time to time.  We need help with the following:</p>
+<ul>
+    <li>Helping with the maintenance of the boathouse and equipment</li>
+    <li>Helping with volunteering at bingo</li>
+    <li>Helping with the maintenance of the club's social media</li>
+</ul>
+             <br>       
+                </div>
+            </div>
+            
+            <!-- Image Section -->
+            <!-- <div class="flexbox-container-main"> -->
+                <div class="banner-image">
+                       
+                            <img src="images/PXL_20250630_100428674.PANO.jpg" alt="Henley Course at sunrise" width="100%" height="250" />
+                        </div>
+                        <!-- <div class="inner-box">
+                            <img src="#" alt="Placeholder 1" width="100%" height="250" />
+                        </div>
+                        <div class="inner-box">
+                            <img src="#" alt="Placeholder 2" width="100%" height="250" />
+                        </div> -->
+                    
+            </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <h3>Ridley Graduate Boat Club</h3>
+        <p class="date-update">Last updated: <span id="last-updated"></span></p> 
+    </footer>
+
+    <!-- JavaScript for Date Update -->
+    <script>
+        const dateElement = document.getElementById("last-updated");
+        const now = new Date();
+        const formattedDate = now.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+        dateElement.textContent = formattedDate; 
+    </script>
+</body>
+</html> 

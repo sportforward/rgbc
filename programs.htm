@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<title> </title>
+<link href="css/rgbcstyl.css" rel="stylesheet" type="text/css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to Ridley Graduate Boat Club">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+	<link href="images/rbgcflv.png" rel="icon" type="image/x-icon"/>
+    <title>Programs | Ridley Graduate Boat Club</title>
+</head>
+
+<body>
+    <header>
+  <nav class="flexbox-containernav">
+    <div class="logo-container">
+        <img class="logo-img" src="images/rbgclogonobkd.png" alt="rgbc logo" width="80px" height="80px">
+    </div>
+  
+    <ul>
+      <li><a href="#">Home</a></li>
+      
+<li>
+        <a href="#">About Us</a>
+        <ul class="submenu">
+            <li><a href="history.htm">Club History</a></li>
+            <li><a href="team.htm">Our Team</a></li>
+            <li><a href="rgbcdocs.htm">Docs/Links</a></li>
+            <li><a href="calendar.htm">Calendar</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="ontarios.htm">Ontario Indoors</a></li>
+        </ul>
+</li>
+      
+<li>
+        <a href="#">Programs</a>
+    <ul class="submenu">
+          <li><a href="#">U19/Youth</a></li>
+          <li><a href="#">Highschool</a></li>
+          <li><a href="#">U23/Senior</a></li>
+          <li><a href="#">Masters</a></li>
+    </ul>
+</li>
+      
+<li>
+    <a href="#">Membership</a>
+    <ul class="submenu">
+            <li><a href="fees.htm">Fees</a></li>
+            <li><a href="regattainfo.htm">Regatta Information</a></li>
+    </ul>
+</li>
+
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </nav>
+
+        <!--    <div class="content-wrapper"> -->
+
+        <h1 class="center-text">Ridley Graduate Boat Club</h1>
+        <h5 class="center-text2">Est. 1972</h5>
+
+        <!--    </div>-->
+ </header>   
+
+    <main class="main-container">
+       
+        <article>
+            <div class="welcome-div"></div>
+        </article>
+        <br>
+        <div class="flexbox-container-main">
+            <div class="flexbox-sect2">
+                <div class="pagetitle">Programs</div><br>
+                <div class="pagetitle-sub">U19/Youth/Highschool</div>
+               
+                <div class="writeup-container">
+                <p>Our U19/Youth/Highschool rowing programs are for young athletes who want to grow through sport, building strength, discipline, and confidence while learning the value of teamwork. With a focus on skill development and fitness, the program prepares athletes for competition at the local, regional, and national levels. For those with the drive to compete internationally, we provide pathways and support to help them reach that stage as well. Whether you're new to rowing or aiming to take your performance to the next level, our coaches create a supportive environment that challenges each athlete to improve. Just as important, the program fosters a strong sense of community where athletes form lasting friendships, learn to lead, and support each other on and off the water.</p>
+         <br>       
+            </div>
+                <div class="pagetitle-sub">U23/Senior</div>
+               
+                <div class="writeup-container">
+                <p>Our U23 and Senior programs are designed for driven athletes who are pursuing high-performance goals, including university rowing opportunities and selection to provincial or national teams. With a focus on year-round development, the program provides a competitive training environment, individualized coaching, and access to top-tier equipment. Athletes are challenged to reach their full potential not only as rowers but as teammates and leaders. Alongside performance goals, we emphasize personal growth, resilience, and the importance of community—creating a culture where athletes support each other, push their limits, and grow both on and off the water.</p>
+        <br>
+                </div>
+
+                <div class="pagetitle-sub">Masters</div>
+               
+                <div class="writeup-container">
+                <p>Our masters rowing program is built for adults who want to challenge themselves—whether through competition or simply by staying active and connected through the sport. For those pursuing racing, we offer structured training geared toward local and national regattas, with coaching that supports both technical development and fitness. For recreational rowers, the focus is on skill-building, staying fit, and enjoying time on the water in a relaxed, social environment. Whether you're returning to rowing or discovering it later in life, our program fosters a supportive atmosphere where teammates push each other to improve, share in each other's successes, and build lasting friendships both on and off the water.</p>
+        <br>
+                </div>
+                <div class="writeup-container">
+                    <div class="programwarning-div"><p><strong>Please check each program page for more information on the program and how to get involved.</strong></p></div>
+                    </div>
+            </div>
+<!-- <div class="flexbox-container-main"> -->
+    <div class="banner-image">
+           
+                <img src="images/20170803_064329.jpg" alt="Henley Course from above the start at sunrise" width="100%" height="250" />
+            </div>
+            <!-- <div class="inner-box">
+                <img src="#" alt="Placeholder 1" width="100%" height="250" />
+            </div>
+            <div class="inner-box">
+                <img src="#" alt="Placeholder 2" width="100%" height="250" />
+            </div> -->
+        
+</div>
+          
+    </main>
+
+    <footer>
+        <h3>Ridley Graduate Boat Club</h3>
+        <p class="date-update">Last updated: <span id="last-updated"></span></p> 
+    </footer>
+    <script>
+        const dateElement = document.getElementById("last-updated");
+        const now = new Date();
+        const formattedDate = now.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        });
+        dateElement.textContent = formattedDate; 
+      </script>
+</body>
+
+</html>
