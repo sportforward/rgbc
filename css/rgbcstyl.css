@@ -952,45 +952,8 @@ form h4 {
     height: 60px;
   }
   
-  nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #000;
-    display: flex;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  
-  nav ul li {
-    margin: 0;
-    border-bottom: 1px solid #333;
-  }
-  
-  nav ul li a {
-    padding: 15px 20px;
-    font-size: 16px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .submenu {
-    position: static;
-    width: 100%;
-    opacity: 1;
-    z-index: 1;
-    pointer-events: auto;
-    box-shadow: none;
-    background-color: #111;
-    padding-left: 20px;
-  }
-  
-  nav ul .submenu li a {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
+  /* Mobile navigation is now handled by the hamburger menu system */
+  /* The desktop-menu is hidden on mobile and mobile-menu is controlled by checkbox */
   
   /* Header */
   header {
@@ -1611,5 +1574,121 @@ form h4 {
     break-inside: avoid;
     box-shadow: none;
     border: 1px solid #ccc;
+  }
+}
+
+/* Mobile Navigation Styles */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none; /* Hidden by default, shown on mobile */
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-icon span {
+  background: #f78d27;
+  display: block;
+  height: 4px;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* When checked → animate into X */
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.mobile-menu a {
+  padding: 16px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: #222;
+  color: #f78d27;
+}
+
+/* Show mobile menu when checkbox is checked */
+#menu-toggle:checked ~ .mobile-menu {
+  display: flex;
+}
+
+/* Desktop Navigation Styles */
+.desktop-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  
+  .desktop-menu {
+    display: flex;
+  }
+  
+  .mobile-menu {
+    display: none !important;
   }
 }
